@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(21, 32, 37);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 27px;
+    font-family: monospace;
+    font-style:inherit;
+}
+
+img {
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.apexcharts-legend-text {
+    color: white !important;
+}
+
+.apexcharts-text {
+    color: white;
+    fill:rgb(255, 255, 255);
+}
+
+#snelheid {
+    color: black;
+}
+
+@media (max-width: 375px){
+
+    img {
+        max-width: 375px;
+    }
+
+    .charts {
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .data {
+        flex: 0 0 auto;
+        min-height: 365px;
+    }
+}
+
+@media (max-height: 453px) and (max-width: 812px) and (min-width:376px ){
+    
+    a {
+        display: flex;
+        justify-content: start;
+        font-size: 15px;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        height: auto;
+        width: 20%;
+    }
+
+    .charts {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    
+    .data {
+        flex: 0 0 auto;
+        width: 60%;
+
+    }
+    .grafiek {
+        width: 80%;
+    }
+
+    .snelheidTekst {
+        justify-content:center;
+    }
+}
+@media (min-height: 454px) and (min-width: 376px) and (max-width: 1024px) {
+
+    .charts {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    
+    .data {
+        flex: 0 0 auto;
+        width: 50%;
+        flex-wrap: nowrap;
+
+    }
+    
+    .grafiek {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .snelheid {
+        width: 100%;
+    }
+}
+@media (min-width: 1025px) {
+    
+    img {
+        height: auto;
+        width: 20%;
+    }
+
+    .charts {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+
+    .data {
+        justify-content: space-between;
+        flex: 0 0 auto;
+        width: 45%;
+    }
+}
